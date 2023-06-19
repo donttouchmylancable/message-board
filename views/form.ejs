@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+        form *{
+            margin:10px;
+        }
+    </style>
+    <title>Messageboard</title>
+</head>
+<body>
+    <fieldset>
+        <form method="POST" action="/new">
+            <h2>Write a message:</h2>
+            <input type="text" id="name" placeholder="yourname" name="name" required> 
+            <input type="text" id="message" placeholder="message" name="message" required>
+            <button type="submit">send message</button>
+        </form>
+        <a href="/">back</a>
+    </fieldset>
+        
+     
+</body>
+</html>
+    
